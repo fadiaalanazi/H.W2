@@ -7,7 +7,7 @@ Team Name:
 
 Team Members - Name and Student ID
 
-1.Fadyah alanazi-2201001182
+1.fadyah alanazi-2201001182
 
 2.
 
@@ -101,8 +101,11 @@ Knit, *commit, and push your changes to GitHub with an appropriate commit messag
 Knit, *commit, and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.d*
 
 ## But of those US-based Nobel laureates, many were born in other countries
-
 ```{r}
+nobel_living_science %>%
+    ggplot(aes(x = country_us,y=category, fill =category)) +
+   geom_bar(stat = "identity", position = "dodge") + 
+   coord_flip()
 
 ```
 
